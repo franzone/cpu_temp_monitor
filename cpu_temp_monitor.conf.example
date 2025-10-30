@@ -1,0 +1,28 @@
+# CPU Temperature Monitoring Script Configuration
+# 
+# Copy this file to cpu_temp_monitor.conf and fill in your settings.
+# Alternatively, you can set environment variables instead.
+#
+# Environment variables:
+#   CPU_MONITOR_EMAIL          - Email address to receive alerts
+#   CPU_MONITOR_DISCORD_WEBHOOK - Discord webhook URL for alerts
+
+# Email configuration
+# Leave empty to disable email alerts
+EMAIL_ADDRESS=""
+EMAIL_FROM="noreply@localhost"
+
+# Discord configuration
+# Leave empty to disable Discord alerts
+# Get your webhook URL from Discord: Server Settings > Integrations > Webhooks
+DISCORD_WEBHOOK=""
+
+# Log file locations (optional, defaults shown)
+LOG_FILE="/var/log/cpu_warning.log"
+ERROR_LOG_FILE="/var/log/cpu_critical.log"
+
+# Examples:
+# EMAIL_ADDRESS="your-phone@txt.carrier.net"
+# EMAIL_ADDRESS="your-email@gmail.com"
+# EMAIL_FROM="your-email@gmail.com"
+# DISCORD_WEBHOOK="https://discord.com/api/webhooks/YOUR_WEBHOOK_ID"
